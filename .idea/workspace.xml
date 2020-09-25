@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31562ac2-4d69-4609-9c87-32f7b83c347b" name="Default Changelist" comment="Category Model Migration Controller Added">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/category.blade.php" afterDir="false" />
+    <list default="true" id="31562ac2-4d69-4609-9c87-32f7b83c347b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/category-create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601043609947</updated>
       <workItem from="1601043611870" duration="10672000" />
-      <workItem from="1601056932527" duration="3517000" />
+      <workItem from="1601056932527" duration="7022000" />
     </task>
     <task id="LOCAL-00001" summary="Category Model Migration Controller Added">
       <created>1601059062446</created>
@@ -168,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601059699550</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Category Model Migration Controller Added">
+      <created>1601060524927</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601060524927</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,10 +192,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601047038056" />
-    <state x="583" y="87" key="CommitChangelistDialog2" timestamp="1601059756194">
+    <state x="583" y="87" key="CommitChangelistDialog2" timestamp="1601060524311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="583" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601059756194" />
+    <state x="583" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601060524311" />
     <state x="834" y="418" key="Github.ShareDialog" timestamp="1601057803645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -196,9 +204,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="731" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601057818866" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601059067852">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601060530355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601059067852" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601060530355" />
   </component>
 </project>

@@ -10,7 +10,8 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Admin</a></li>
-                        <li class="breadcrumb-item active text-capitalize">Category List</li>
+                        <li class="breadcrumb-item"><a href="{{route('category.index')}}">Category List</a></li>
+                        <li class="breadcrumb-item active text-capitalize">Create Category</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -26,7 +27,7 @@
                     <div class="card">
                         <div class="card-header border-2">
                             <div class="d-flex justify-content-between">
-                                <h3 class="card-title">Category List</h3>
+                                <h3 class="card-title">Create Category</h3>
                                 <a href="{{route('category.create')}}" class="btn btn-outline-secondary">Create category</a>
                             </div>
                         </div>
