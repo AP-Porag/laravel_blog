@@ -46,3 +46,6 @@ Route::get('/post',function (){
 Route::get('/admin-home',function (){
     return view('admin.dashboard.index');
 })->name('admin');
+
+//Admin Rout final
+Route::resource('category','CategoryController');
