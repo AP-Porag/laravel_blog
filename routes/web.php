@@ -47,5 +47,12 @@ Route::get('/admin-home',function (){
     return view('admin.dashboard.index');
 })->name('admin');
 
-//Admin Rout final
-Route::resource('category','CategoryController');
+Route::group(['prefix' => 'admin','middleware' => ['auth']],function (){
+    Route::get('/dashboard',function (){
+        return view('admin.dashboard.index');
+    })->name('dashboard');
+
+    Route::resource('category','CategoryController');
+});
+
+

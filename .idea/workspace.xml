@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31562ac2-4d69-4609-9c87-32f7b83c347b" name="Default Changelist" comment="">
+    <list default="true" id="31562ac2-4d69-4609-9c87-32f7b83c347b" name="Default Changelist" comment="Category Model Migration Controller Added">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/category.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -151,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601043609947</updated>
       <workItem from="1601043611870" duration="10672000" />
-      <workItem from="1601056932527" duration="2467000" />
+      <workItem from="1601056932527" duration="3517000" />
     </task>
     <task id="LOCAL-00001" summary="Category Model Migration Controller Added">
       <created>1601059062446</created>
@@ -160,13 +161,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601059062446</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Category Model Migration Controller Added">
+      <created>1601059699550</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601059699550</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Category Model Migration Controller Added" />
     <option name="LAST_COMMIT_MESSAGE" value="Category Model Migration Controller Added" />
   </component>
@@ -175,10 +184,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601047038056" />
-    <state x="583" y="87" key="CommitChangelistDialog2" timestamp="1601059061917">
+    <state x="583" y="87" key="CommitChangelistDialog2" timestamp="1601059756194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="583" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601059061917" />
+    <state x="583" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601059756194" />
     <state x="834" y="418" key="Github.ShareDialog" timestamp="1601057803645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
