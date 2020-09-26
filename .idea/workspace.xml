@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31562ac2-4d69-4609-9c87-32f7b83c347b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/category-edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/category-show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel Bolg - Feature.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel Bolg - Feature.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/category-create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/category-create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/category-show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/category-show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +160,7 @@
       <workItem from="1601043611870" duration="10672000" />
       <workItem from="1601056932527" duration="7999000" />
       <workItem from="1601127382739" duration="4398000" />
-      <workItem from="1601145958957" duration="10399000" />
+      <workItem from="1601145958957" duration="10602000" />
     </task>
     <task id="LOCAL-00001" summary="Category Model Migration Controller Added">
       <created>1601059062446</created>
@@ -211,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601064393053</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Category Model Migration Controller Added">
+      <created>1601157023630</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601157023630</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,10 +227,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601047038056" />
-    <state x="583" y="87" key="CommitChangelistDialog2" timestamp="1601064392600">
+    <state x="583" y="87" key="CommitChangelistDialog2" timestamp="1601157022498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="583" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601064392600" />
+    <state x="583" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601157022498" />
     <state x="834" y="418" key="Github.ShareDialog" timestamp="1601057803645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -239,9 +239,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="731" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601057818866" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601064400916">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601157035150">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601064400916" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601157035150" />
   </component>
 </project>

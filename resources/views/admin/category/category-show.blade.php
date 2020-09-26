@@ -44,7 +44,7 @@
                                 <p><strong class="text-primary">Slug : </strong> {{$category->slug}}</p>
                             </div>
                             <div class="d-flex">
-                                <p><strong class="text-primary">Create Date : </strong> {{$category->created_at}}</p>
+                                <p><strong class="text-primary">Create Date : </strong> {{$category->created_at->diffForHumans()}}</p>
                             </div>
                             <div class="d-flex">
                                 <p><strong class="text-primary">Description : </strong> {{$category->description}}</p>
