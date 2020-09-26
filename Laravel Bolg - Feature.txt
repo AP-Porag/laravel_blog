@@ -21,9 +21,16 @@ Pages:
 		contact form
 		contact info
 	category
-		categpry info
+		category info
 		posts
 		pagination
+	subcategory(27/9/2020)
+    		subcategory name
+    		category id
+    		slug
+    		description
+    		posts count
+    		pagination
 	single blog page
 		banner
 		blog info

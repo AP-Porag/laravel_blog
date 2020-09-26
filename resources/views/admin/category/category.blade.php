@@ -44,17 +44,24 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                @foreach($categories as $category)
                                 <tr>
-                                    <td>183</td>
-                                    <td>Name</td>
-                                    <td>Slug</td>
+                                    <td>{{$category->id}}</td>
+                                    <td>{{$category->name}}</td>
+                                    <td>{{$category->slug}}</td>
                                     <td>13</td>
-                                    <td>Description - Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                    <td class="text-center">
-                                        <a href="#" class="btn btn-warning btn-sm mr-3"><i class="fa fa-edit"></i></a>
-                                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                                    <td>{{ Illuminate\Support\Str::limit($category->description, 100) }}</td>
+                                    <td class="text-center d-flex">
+                                        <a href="{{route('category.show',[$category->id])}}" class="btn btn-info btn-sm mr-3"><i class="fa fa-eye"></i></a>
+                                        <a href="{{route('category.edit',[$category->id])}}" class="btn btn-warning btn-sm mr-3"><i class="fa fa-edit"></i></a>
+                                        <form action="{{route('category.destroy',[$category->id])}}" method="post">
+                                            @method('DELETE')
+                                            @csrf
+                                            <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                                        </form>
                                     </td>
                                 </tr>
+                                @endforeach
                                 </tbody>
                             </table>
 

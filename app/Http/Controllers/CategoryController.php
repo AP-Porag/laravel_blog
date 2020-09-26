@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\str;
 use voku\helper\ASCII;
 
 class CategoryController extends Controller
@@ -15,7 +18,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return view('admin.category.category');
+        $categories = Category::orderBy('created_at','DESC')->paginate(5);
+        return view('admin.category.category',compact('categories'));
     }
 
     /**
@@ -36,7 +40,21 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //validation
+
+        $this->validate($request,[
+            'name'=>'required|unique:categories,name',
+        ]);
+
+        $category = Category::create([
+
+            'name'=> $request->name,
+            'slug'=> str::slug($request->name,'-'),
+            'description' => $request->description
+        ]);
+
+        Session::flash('success','Category Created Successfully');
+        return redirect()->back();
     }
 
     /**
@@ -47,7 +65,7 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        //
+        return view('admin.category.category-show',compact('category'));
     }
 
     /**
@@ -58,7 +76,7 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        return view('admin.category.category-edit',compact('category'));
     }
 
     /**
@@ -70,7 +88,19 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+        //validation
+
+        $this->validate($request,[
+            'name'=>'required|unique:categories,name',
+        ]);
+
+        $category -> name = $request->name;
+        $category -> slug = str::slug($request->name,'-');
+        $category -> description = $request->description;
+        $category -> save();
+
+        Session::flash('success','Category Updated Successfully');
+        return redirect()->back();
     }
 
     /**
@@ -81,6 +111,10 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        //
+        if ($category){
+            $category->delete();
+        }
+        Session::flash('success','Category Deleted Successfully');
+        return redirect()->back();
     }
 }
