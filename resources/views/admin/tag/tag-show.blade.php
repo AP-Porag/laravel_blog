@@ -5,13 +5,13 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Category</h1>
+                    <h1 class="m-0 text-dark">Tag</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="{{route('category.index')}}">Category List</a></li>
-                        <li class="breadcrumb-item active text-capitalize">Category Details</li>
+                        <li class="breadcrumb-item"><a href="{{route('tag.index')}}">Tag List</a></li>
+                        <li class="breadcrumb-item active text-capitalize">Tag Details</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -27,33 +27,33 @@
                     <div class="card">
                         <div class="card-header border-2 bg-gradient-indigo">
                             <div class="d-flex justify-content-between">
-                                <h3 class="card-title">Details Category - <strong>{{$category->name}}</strong></h3>
-                                <a href="{{route('category.index')}}" class="btn btn-outline-light">Category
+                                <h3 class="card-title">Details Tag - <strong>{{$tag->name}}</strong></h3>
+                                <a href="{{route('tag.index')}}" class="btn btn-outline-light">Tag
                                     List</a>
                             </div>
                         </div>
                         <div class="card-body">
 
                             <div class="d-flex">
-                                <p><strong class="text-primary">ID : </strong> {{$category->id}}</p>
+                                <p><strong class="text-primary">ID : </strong> {{$tag->id}}</p>
                             </div>
                             <div class="d-flex">
-                                <p><strong class="text-primary">Name : </strong> {{$category->name}}</p>
+                                <p><strong class="text-primary">Name : </strong> {{$tag->name}}</p>
                             </div>
                             <div class="d-flex">
-                                <p><strong class="text-primary">Slug : </strong> {{$category->slug}}</p>
+                                <p><strong class="text-primary">Slug : </strong> {{$tag->slug}}</p>
                             </div>
                             <div class="d-flex">
-                                <p><strong class="text-primary">Create Date : </strong> {{$category->created_at->diffForHumans()}}</p>
+                                <p><strong class="text-primary">Create Date : </strong> {{$tag->created_at->diffForHumans()}}</p>
                             </div>
                             <div class="d-flex">
-                                <p><strong class="text-primary">Description : </strong> {{$category->description}}</p>
+                                <p><strong class="text-primary">Description : </strong> {{$tag->description}}</p>
                             </div>
 
 
                         </div>
                         <div class="card-footer bg-gradient-indigo">
-                            <a href="{{route('category.edit',[$category->id])}}" class="btn btn-outline-warning">Edit Category</a>
+                            <a href="{{route('tag.edit',[$tag->id])}}" class="btn btn-outline-warning">Edit Tag</a>
                         </div>
                     </div>
                     <!-- /.card -->

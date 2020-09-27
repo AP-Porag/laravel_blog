@@ -5,13 +5,13 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Category</h1>
+                    <h1 class="m-0 text-dark">Tag</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="{{route('category.index')}}">Category List</a></li>
-                        <li class="breadcrumb-item active text-capitalize">Create Category</li>
+                        <li class="breadcrumb-item"><a href="{{route('tag.index')}}">Tag List</a></li>
+                        <li class="breadcrumb-item active text-capitalize">Create Tag</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -27,8 +27,8 @@
                     <div class="card">
                         <div class="card-header border-2">
                             <div class="d-flex justify-content-between">
-                                <h3 class="card-title">Create Category</h3>
-                                <a href="{{route('category.index')}}" class="btn btn-outline-secondary">Category
+                                <h3 class="card-title">Create Tag</h3>
+                                <a href="{{route('tag.index')}}" class="btn btn-outline-secondary">Tag
                                     List</a>
                             </div>
                         </div>
@@ -36,11 +36,11 @@
 
                             <div class="row">
                                 <div class="col-12 col-lg-6 offset-lg-3 col-md-8 offset-md-2">
-                                    <form action="{{route('category.store')}}" method="post">
+                                    <form action="{{route('tag.store')}}" method="post">
                                         @csrf
                                         <div class="card-body">
                                             <div class="form-group">
-                                                <label for="name">Category Name</label>
+                                                <label for="name">Tag Name</label>
                                                 <input type="text" name="name"
                                                        class="form-control @error('name') is-invalid @enderror"
                                                        name="name" value="{{ old('name') }}" id="name"
@@ -61,7 +61,7 @@
                                         <!-- /.card-body -->
 
                                         <div class="card-footer text-right">
-                                            <button type="submit" class="btn bg-gradient-secondary">Save Category
+                                            <button type="submit" class="btn bg-gradient-secondary">Save Tag
                                             </button>
                                         </div>
                                     </form>

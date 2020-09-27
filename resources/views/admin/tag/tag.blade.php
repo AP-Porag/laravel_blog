@@ -5,12 +5,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Category</h1>
+                    <h1 class="m-0 text-dark">Tag</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Admin</a></li>
-                        <li class="breadcrumb-item active text-capitalize">Category List</li>
+                        <li class="breadcrumb-item active text-capitalize">Tag List</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -26,8 +26,8 @@
                     <div class="card">
                         <div class="card-header border-2">
                             <div class="d-flex justify-content-between">
-                                <h3 class="card-title">Category List</h3>
-                                <a href="{{route('category.create')}}" class="btn btn-outline-secondary">Create category</a>
+                                <h3 class="card-title">Tag List</h3>
+                                <a href="{{route('tag.create')}}" class="btn btn-outline-secondary">Create Tag</a>
                             </div>
                         </div>
                         <div class="card-body">
@@ -44,17 +44,18 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($categories as $category)
+                                @if($tags->count())
+                                @foreach($tags as $tag)
                                 <tr>
-                                    <td>{{$category->id}}</td>
-                                    <td>{{$category->name}}</td>
-                                    <td>{{$category->slug}}</td>
+                                    <td>{{$tag->id}}</td>
+                                    <td>{{$tag->name}}</td>
+                                    <td>{{$tag->slug}}</td>
                                     <td>13</td>
-                                    <td>{{ Illuminate\Support\Str::limit($category->description, 100) }}</td>
+                                    <td>{{ Illuminate\Support\Str::limit($tag->description, 100) }}</td>
                                     <td class="text-center d-flex">
-                                        <a href="{{route('category.show',[$category->id])}}" class="btn btn-info btn-sm mr-3"><i class="fa fa-eye"></i></a>
-                                        <a href="{{route('category.edit',[$category->id])}}" class="btn btn-warning btn-sm mr-3"><i class="fa fa-edit"></i></a>
-                                        <form action="{{route('category.destroy',[$category->id])}}" method="post">
+                                        <a href="{{route('tag.show',[$tag->id])}}" class="btn btn-info btn-sm mr-3"><i class="fa fa-eye"></i></a>
+                                        <a href="{{route('tag.edit',[$tag->id])}}" class="btn btn-warning btn-sm mr-3"><i class="fa fa-edit"></i></a>
+                                        <form action="{{route('tag.destroy',[$tag->id])}}" method="post">
                                             @method('DELETE')
                                             @csrf
                                             <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
@@ -62,6 +63,13 @@
                                     </td>
                                 </tr>
                                 @endforeach
+                                @else
+                                    <tr>
+                                        <td colspan="6" class="alert alert-default-info text-indigo text-center">
+                                            <h5>No Tag found</h5>
+                                        </td>
+                                    </tr>
+                                @endif
                                 </tbody>
                             </table>
 

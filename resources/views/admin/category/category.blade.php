@@ -44,6 +44,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                @if($categories->count())
                                 @foreach($categories as $category)
                                 <tr>
                                     <td>{{$category->id}}</td>
@@ -62,6 +63,13 @@
                                     </td>
                                 </tr>
                                 @endforeach
+                                @else
+                                    <tr>
+                                        <td colspan="6" class="alert alert-default-info text-indigo text-center">
+                                            <h5>No Category found</h5>
+                                        </td>
+                                    </tr>
+                                @endif
                                 </tbody>
                             </table>
 
