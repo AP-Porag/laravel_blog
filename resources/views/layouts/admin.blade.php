@@ -171,7 +171,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-chart-pie"></i>
+                            <i class="nav-icon fas fa-clipboard-list"></i>
                             <p>
                                 Category
                                 <i class="right fas fa-angle-left"></i>
@@ -184,16 +184,21 @@
                                     <p>Category List</p>
                                 </a>
                             </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fa fa-tags"></i>
+                            <p>
+                                Tag
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="pages/charts/flot.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Dummy Two</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/charts/inline.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Dummy Three</p>
+                                <a href="{{route('tag.index')}}" class="nav-link">
+                                    <i class="fa fa-list nav-icon"></i>
+                                    <p>Tag List</p>
                                 </a>
                             </li>
                         </ul>

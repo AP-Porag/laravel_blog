@@ -53,6 +53,7 @@ Route::group(['prefix' => 'admin','middleware' => ['auth']],function (){
     })->name('dashboard');
 
     Route::resource('category','CategoryController');
+    Route::resource('tag','TagController');
 });
 
 
